@@ -1,7 +1,7 @@
 FROM python:3.7-buster
 RUN mkdir /home/myblog
 WORKDIR /home/myblog 
-COPY /posts.json ./
+COPY /posts.json /home/myblog/
 COPY ./ /home/myblog/
 
 EXPOSE 8000
