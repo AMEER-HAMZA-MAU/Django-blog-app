@@ -1,6 +1,6 @@
 FROM python:3.7-buster
-RUN mkdir /home/myblog/
-WORKDIR /home/myblog/
+RUN mkdir /home/myblog
+WORKDIR /home/myblog
 COPY ./ /home/myblog/
 COPY posts.json /home/myblog/
 EXPOSE 8000
