@@ -5,4 +5,4 @@ COPY /posts.json /home/myblog/
 COPY ./ /home/myblog/
 
 EXPOSE 8000
-ENTRYPOINT ["python","manage.py","runserver","0.0.0.0:8000"]
+CMD ["python","manage.py","runserver","0.0.0.0:8000"]
