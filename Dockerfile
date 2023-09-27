@@ -1,5 +1,6 @@
 FROM python:3.7-buster
-WORKDIR /app
-COPY . /app
+RUN mkdir /home/myblog
+WORKDIR /home/myblog 
+COPY ./ /home/myblog/
 EXPOSE 8000
 ENTRYPOINT ["python","manage.py","runserver","0.0.0.0:8000"]
